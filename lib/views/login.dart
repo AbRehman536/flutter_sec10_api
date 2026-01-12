@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sec10_api/services/auth.dart';
+import 'package:flutter_sec10_api/views/get_all_task.dart';
 import 'package:flutter_sec10_api/views/profile.dart';
 import 'package:flutter_sec10_api/views/register.dart';
 import 'package:provider/provider.dart';
@@ -46,7 +47,7 @@ class _LoginState extends State<Login> {
                             title: Text("Login Successfully"),
                             actions: [
                               TextButton(onPressed: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context)=> Profile()));
+                                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> GetAllTask()));
                               }, child: Text("Okay"))
                             ],);
                         }, );

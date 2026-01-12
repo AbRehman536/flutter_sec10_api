@@ -5,7 +5,7 @@ import '../models/task.dart';
 import '../models/taskListing.dart';
 
 class TaskServices {
-  String baseURL = "https://todo-nu-plum-19.vercel.app";
+  String baseURL = "https://todo-nu-plum-19.vercel.app/";
 
   ///Create Task
   Future<TaskModel> createTask(
